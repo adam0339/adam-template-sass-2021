@@ -1,0 +1,77 @@
+@mixin white-border(){ /* här skapar jag en mixin med en white border, sedan satte jag den som dashed i style med 20 px*/
+    border-color: white;
+    border-width: 20px;
+    border-style: dashed;
+}
+@mixin import-text { /* här importerar jag min text och stylar det*/
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+}
+@mixin bordered($color: blue, $width: 1px){ /*Här skapar jag en mix på border och stylar den*/
+    border: $width solid $color;
+}
+@mixin  color {
+    @include import-text;
+background-color: greenyellow;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+}
+/*Notera att det är någon buggg med VH / VW så det går att skrolla till höger och vänster*/
+.page1 {
+    display: flex; /*Här har jag skapat en del av min hemsida, jag har importat en image stylate det med hjälp av include */
+    background-color: yellow;
+    background-image: url('./img/ps4.jpg');
+    width: 100%;
+    height: 100vh;
+    @include white-border();
+    @include import-text();
+    @include bordered($color: orange);
+}
+
+.page2 {  /*Här har jag skapat en del av min hemsida, jag har importat en image stylate det med hjälp av include */
+    display: flex;
+    background-color: purple;
+    background-image: url('./img/game.png');
+    width: 100%;
+    height: 100vh;
+    @include white-border();
+    @include import-text();
+    @include bordered($color: orange);
+}
+.page3{  /*Här har jag skapat en del av min hemsida, jag har importat en image stylate det med hjälp av include */
+    display: flex;
+    background-color: green;
+    background-image: url('./img/PS45.jpg');
+    width:100%;
+    height:100vh;
+    @include white-border();
+    @include import-text();
+    @include bordered($color: orange);
+}
+.box{ /*här skapar jag en box, jag har skapat en display och includerat text och bordered*/
+    display: flex;
+    align-items:center;
+    @include import-text();
+    @include bordered($color: orange);
+}
+.box div{ /*här skapar jag en box, jag har skapat en display och includerat text och bordered*/
+    width: 100px;
+    height: 100px;
+    @include import-text();
+    @include bordered($color: orange);
+}
+body { /*här skapar jag en box, jag har skapat en display och includerat text och bordered*/
+    background-image: url();
+    background-color: #cccccc;
+    @include import-text();
+    @include bordered($color: orange);
+   }

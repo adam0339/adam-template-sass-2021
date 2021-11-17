@@ -1,0 +1,99 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+}
+
+/*Notera att det är någon buggg med VH / VW så det går att skrolla till höger och vänster*/
+.page1 { 
+  display: -webkit-box; 
+  display: -ms-flexbox;
+  display: flex;
+  background-color: yellow;
+  background-image: url("./img/ps4.jpg"); /*Här anställer jag en image till min hemsida, jag stylar det med color, width och height */
+  width: 100%; /* */
+  height: 100vh;
+  border-color: white;
+  border-width: 20px;
+  border-style: dashed;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  border: 1px solid orange;
+}
+
+.page2 { /*Här anställer jag en image till min hemsida, jag stylar det med color, width och height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: purple;
+  background-image: url("./img/game.png");
+  width: 100%;
+  height: 100vh;
+  border-color: white;
+  border-width: 20px;
+  border-style: dashed;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  border: 1px solid orange;
+}
+
+.page3 { /*Här anställer jag en image till min hemsida, jag stylar det med color, width och height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: green;
+  background-image: url("./img/PS45.jpg");
+  width: 100%;
+  height: 100vh;
+  border-color: white;
+  border-width: 20px;
+  border-style: dashed;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  border: 1px solid orange;
+}
+
+.box { /*här skapat jag en box med display och jag stylar det med color */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  border: 1px solid orange;
+}
+
+.box div { /* här skapar jag en box med div, jag stylar det med color och storlekar*/
+  width: 100px;
+  height: 100px;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  border: 1px solid orange;
+}
+
+body { /*här stylar jag min body, jag satte en image, bcg color och storlekar*/
+  background-image: url();
+  background-color: #cccccc;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  border: 1px solid orange;
+}
+/*# sourceMappingURL=style.css.map */
